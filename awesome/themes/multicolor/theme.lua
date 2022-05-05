@@ -184,7 +184,7 @@ local bat = lain.widget.bat({
         local perc = bat_now.perc ~= "N/A" and bat_now.perc .. "%" or bat_now.perc
 
         if bat_now.ac_status == 1 then
-            perc = perc .. " plug"
+            perc = perc .. " "
         end
 
         widget:set_markup(markup.fontfg(theme.font, theme.fg_normal, perc .. " "))
@@ -327,10 +327,10 @@ function theme.at_screen_connect(s)
             cpu.widget,
             --weathericon,
             --theme.weather.widget,
-            --tempicon,
-            --temp.widget,
-            --baticon,
-            --bat.widget,
+            tempicon,
+            temp.widget,
+           baticon,
+           bat.widget,
             clockicon,
             mytextclock,
             wibox.widget.systray(),
