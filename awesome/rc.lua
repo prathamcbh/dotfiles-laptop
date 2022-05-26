@@ -131,7 +131,7 @@ local virtualmachine    = "virt-manager"
 -- awesome variables
 awful.util.terminal = terminal
 --awful.util.tagnames = {  "➊", "➋", "➌", "➍", "➎", "➏", "➐", "➑", "➒" }
-awful.util.tagnames = { "⠐", "⠡", "⠲", "⠵", "⠻", "⠿" }
+--awful.util.tagnames = { "⠐", "⠡", "⠲", "⠵", "⠻", "⠿" }
 awful.util.tagnames = { "", "", "", "", "" }
 --awful.util.tagnames = { "⌘", "♐", "⌥", "ℵ" }
 --awful.util.tagnames = { "www", "edit", "gimp", "inkscape", "music" }
@@ -371,7 +371,7 @@ globalkeys = my_table.join(
         {description = "pulseaudio control", group = "super"}),
     --awful.key({ modkey }, "u", function () awful.screen.focused().mypromptbox:run() end,
           --{description = "run prompt", group = "super"}),
-    awful.key({ modkey }, "x",  function () awful.util.spawn( "arcolinux-logout" ) end,
+    awful.key({ modkey }, "x",  function () awful.util.spawn( "archlinux-logout" ) end,
       {description = "exit", group = "hotkeys"}),
     awful.key({ modkey }, "Escape", function () awful.util.spawn( "xkill" ) end,
         {description = "Kill proces", group = "hotkeys"}),
@@ -980,7 +980,7 @@ awful.rules.rules = {
           "Font-manager",
           "Kruler",
           "MessageWin",  -- kalarm.
-          "arcolinux-logout",
+          "archlinux-logout",
           "Peek",
           "Skype",
           "System-config-printer.py",
